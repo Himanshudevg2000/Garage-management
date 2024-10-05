@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
-import { FaHome, FaCar, FaWrench, FaCalendarAlt, FaReceipt, FaChartLine } from "react-icons/fa";
 import "../styles/globals.css";
-import Link from "next/link";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,53 +29,12 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
       </head>
-      <body className="bg-gray-100 text-gray-900 font-sans antialiased flex">
-        <aside className="bg-blue-800 text-white w-64 p-6 h-screen shadow-lg">
-          <h2 className="text-2xl font-bold mb-8 text-center">Garage Management</h2>
-          <nav>
-            <ul className="space-y-4">
-              <li>
-                <Link href="/" className="flex items-center p-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaHome className="mr-2" />
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/vehicles" className="flex items-center p-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaCar className="mr-2" />
-                  Manage Vehicles
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="flex items-center p-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaWrench className="mr-2" />
-                  Manage Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/appointments" className="flex items-center p-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaCalendarAlt className="mr-2" />
-                  Manage Appointments
-                </Link>
-              </li>
-              <li>
-                <Link href="/billing" className="flex items-center p-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaReceipt className="mr-2" />
-                  Billing & Invoicing
-                </Link>
-              </li>
-              <li>
-                <Link href="/reports" className="flex items-center p-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                  <FaChartLine className="mr-2" />
-                  Reports
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        <main className="flex-1 container p-6 pt-6">
+      <body className="">
+        <Header />
+        <main>
           {children}
         </main>
+        <Footer />
       </body>
 
     </html>
