@@ -23,7 +23,7 @@ const Login = () => {
                                     <input
                                         type="submit"
                                         value="Sign In"
-                                        className="w-full cursor-pointer rounded-md border border-primary bg-primary px-5 py-3 text-base font-medium text-white transition hover:bg-opacity-90"
+                                        className="web-btn-primary"
                                     />
                                 </div>
                             </form>
