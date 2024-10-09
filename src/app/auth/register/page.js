@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import InputBox from "@/app/components/InputBox";
+import InputBox from "@/components/InputBox";
 
 const Login = () => {
     return (

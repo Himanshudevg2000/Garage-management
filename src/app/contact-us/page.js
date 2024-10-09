@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import TextArea from "../components/TextArea";
-import InputBox from "../components/InputBox";
+import TextArea from "../../components/TextArea";
+import InputBox from "../../components/InputBox";
 
 const Contact = () => {
     return (
