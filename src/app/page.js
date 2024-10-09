@@ -1,3 +1,4 @@
+import ProductCard from "@/components/ProductCard";
 import BannerSlider from "../components/BannerSlider";
 
 export default function Home() {
@@ -64,17 +65,26 @@ export default function Home() {
           <h4 className="text-center text-4xl font-bold mb-6">Our Category</h4>
           <div className="grid grid-cols-1 lg:grid-cols-3">
             <div className="card mx-4 my-4 md:my-0">
-              <img src="/image/category1.webp" className="w-full object-contain" alt="Full Services" loading="lazy" />
-              <button className="btn web-btn1">Full Services</button>
+              <img src="/image/category1.webp" className="w-full object-contain" alt="Full Car Services" loading="lazy" />
+              <button className="btn web-btn1">Full Car Services</button>
             </div>
             <div className="card mx-4 my-4 md:my-0">
-              <img src="/image/category2.webp" className="w-full object-contain" alt="Full Services" loading="lazy" />
-              <button className="btn web-btn1">Full Services</button>
+              <img src="/image/category2.webp" className="w-full object-contain" alt="Partial Car Service" loading="lazy" />
+              <button className="btn web-btn1">Partial Car Service</button>
             </div>
             <div className="card mx-4 my-4 md:my-0">
-              <img src="/image/category3.webp" className="w-full object-contain" alt="Full Services" loading="lazy" />
-              <button className="btn web-btn1">Full Services</button>
+              <img src="/image/category3.webp" className="w-full object-contain" alt="Custome Car Service" loading="lazy" />
+              <button className="btn web-btn1">Custome Car Service</button>
             </div>
+          </div>
+        </section>
+
+        <section className="home-page-section-3 section-padding">
+          <h4 className="text-center text-4xl font-bold mb-6">Our Products</h4>
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </section>
       </div>
