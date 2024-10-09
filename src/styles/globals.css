@@ -83,6 +83,9 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.footer-section *{
+  color: white;
+}
 
 .banner-slider img{
   height: 700px;
@@ -97,4 +100,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   padding: 10px 0;
   cursor: pointer;
+}
+
+.login-page{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/image/login-bg.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
