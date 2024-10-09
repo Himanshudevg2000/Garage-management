@@ -5,17 +5,17 @@ const Header = () => {
     return (
         <>
             <div className="navbar header-menu-bar">
-                <div className="container mx-auto h-2">
+                <div className="container mx-auto">
                     <div className="flex-1">
                         <Link href="/" className="btn btn-ghost text-xl">B&K Garage</Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/about-us">About Us</Link></li>
-                            <li><Link href="/services">Services</Link></li>
-                            <li><Link href="/contact-us">Contact Us</Link></li>
-                            <li><Link href="/contact-us" className="btn btn-outline text-white btn-sm rounded-sm">Login</Link></li>
+                            <li><Link className='px-4 text-lg' href="/">Home</Link></li>
+                            <li><Link className='px-4 text-lg' href="/about-us">About Us</Link></li>
+                            <li><Link className='px-4 text-lg' href="/services">Services</Link></li>
+                            <li><Link className='px-4 text-lg' href="/contact-us">Contact Us</Link></li>
+                            <li><Link className='px-4 text-lg' href="/auth/login">Login</Link></li>
                         </ul>
                     </div>
                     <div className="flex-none lg:hidden sm:block">

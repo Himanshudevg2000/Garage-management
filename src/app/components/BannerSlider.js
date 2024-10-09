@@ -16,17 +16,17 @@ const BannerSlider = () => {
     }, []);
 
     return (
-        <div className="carousel w-full">
+        <div className="carousel w-full banner-slider">
             <div id="slide1"
                 className={`carousel-item relative w-full ${currentSlide === 1 ? 'block' : 'hidden'}`}>
-                <img src="/image/image2.webp"
+                <img src="/image/image1.jpg"
                     className="w-full"
                     alt="Slide 1" />
             </div>
             <div id="slide2"
                 className={`carousel-item relative w-full ${currentSlide === 2 ? 'block' : 'hidden'}`}>
                 <img
-                    src="/image/image3.webp"
+                    src="/image/image2.jpg"
                     className="w-full"
                     alt="Slide 2"
                 />

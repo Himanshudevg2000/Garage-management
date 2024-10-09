@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Garage Management System",
+  title: "B&K Garage Management System",
   description: "A comprehensive system to manage vehicles, services, and appointments efficiently",
   keywords: "garage management, vehicle services, appointment scheduling, car service",
 };
